@@ -23,6 +23,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
      {
        yield* _changevalue('mins');
      }
+
    }
 
   Stream<CounterStates> _changevalue(String s) async*{
