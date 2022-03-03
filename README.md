@@ -1,6 +1,6 @@
-# counter_with_bloc
+# Fluuter counter_with_bloc
 
-A new Flutter application.
+Using BLoc Pattern .
 
 ## Getting Started
 
