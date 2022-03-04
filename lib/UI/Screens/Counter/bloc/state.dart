@@ -1,14 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 
 @immutable
-abstract class CounterStates {
-
-
-  CounterStates();
+abstract class CounterStates
+{
+  const CounterStates();
 }
-class intialCounterStates extends CounterStates{}
-class SuccessCounterStates extends CounterStates{
-  late final String type ;
 
-  SuccessCounterStates(this.type);
-}
+class InitialCounterState extends CounterStates {}
+class IncrementCounterValue extends CounterStates {}
+class DecrementCounterValue extends CounterStates{}
