@@ -3,6 +3,7 @@
 Using BLoc Pattern .
 
 ## Getting Started
+![image](https://user-images.githubusercontent.com/72301777/156677236-46d4eb75-a967-4b97-ad53-709091e4907f.png)
 
 This project is a starting point for a Flutter application.
 
