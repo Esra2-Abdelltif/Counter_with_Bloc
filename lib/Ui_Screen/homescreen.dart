@@ -17,8 +17,8 @@ class HomeScreen extends StatelessWidget {
       child: BlocConsumer<CounterCubit,CounterStates>(
         listener: (BuildContext context,CounterStates state){
           if(state is InitialCounterState) print('intial state');
-          if(state is IncrementCounterValue) print('plus state');
-          if(state is DecrementCounterValue) print('minus state');
+          if(state is IncrementCounterValue) print('plus state${state.Counter}');
+          if(state is DecrementCounterValue) print('minus state${state.Counter}');
 
         },
     builder: (BuildContext context ,CounterStates state) {

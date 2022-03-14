@@ -7,5 +7,13 @@ abstract class CounterStates
 }
 
 class InitialCounterState extends CounterStates {}
-class IncrementCounterValue extends CounterStates {}
-class DecrementCounterValue extends CounterStates{}
+class IncrementCounterValue extends CounterStates {
+  final int Counter;
+
+  IncrementCounterValue(this.Counter);
+}
+class DecrementCounterValue extends CounterStates{
+  final int Counter;
+
+  DecrementCounterValue(this.Counter);
+}
