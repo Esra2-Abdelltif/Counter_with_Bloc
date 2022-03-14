@@ -1,14 +1,14 @@
-import 'package:counter_with_bloc/UI/Screens/Counter/bloc/state.dart';
-import 'package:counter_with_bloc/UI/Screens/Counter/bloc/state.dart';
-import 'package:counter_with_bloc/UI/Screens/Counter/cubit/cubit.dart';
+import 'package:counter_with_bloc/bloc/state.dart';
+import 'package:counter_with_bloc/bloc/state.dart';
+import 'package:counter_with_bloc/bloc/cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'bloc/state.dart';
+import '../bloc/state.dart';
 
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +81,8 @@ class HomeScreen extends StatelessWidget {
             ],),
         ),
       );
-    }),
+    }
+    ),
     );
 
   }
