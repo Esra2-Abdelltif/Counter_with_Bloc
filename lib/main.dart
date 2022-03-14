@@ -1,11 +1,20 @@
 
+import 'package:counter_with_bloc/shared/observer_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'Ui_Screen/homescreen.dart';
 
 
 void main() {
   runApp(const MyApp());
+  //Bloc.observer=MyBlocObserver();
+  BlocOverrides.runZoned(
+        () {
+      // Use blocs...
+    },
+    blocObserver: MyBlocObserver(),
+  );
 }
 
 class MyApp extends StatelessWidget {
